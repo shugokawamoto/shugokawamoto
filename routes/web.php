@@ -14,3 +14,6 @@ use App\Controllers\PostController;
 */
 
 Route::get('/posts', [PostController::class, 'index']);
+Route::get('/', function () {
+    return view('welcome');
+})->name('dashboard');
